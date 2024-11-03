@@ -23,6 +23,8 @@ p {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .hidden {
   display: none;
@@ -57,7 +59,11 @@ img {
 /* ------------ADVANTAGES--------------- */
 .advantages {
   padding: 96px 0;
+  /* max-width: 296px; */
 }
+/* advantages-container {
+  max-width: 296px;
+} */
 .advantages-icons-container {
   display: none;
 }
@@ -136,11 +142,11 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-container {
-  margin: 0 auto;
+  max-width: 296px;
 }
 .team {
   background-color: #f4f4fd;
-  max-width: 320px;
+  /* max-width: 320px; */
   /* display: flex; */
   /* justify-content: center; */
 }
@@ -209,14 +215,34 @@ img {
 @media screen and (max-width: 767px) {
   .team {
     padding: 96px 0;
-    max-width: 296px;
+    max-width: 320px;
   }
 }
 @media screen and (min-width: 768px) {
-  .team-item {
-    max-width: calc((100% - 72px) / 4);
+  .team-container {
+    max-width: 768px;
+  }
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
   }
 }
+.team-item {
+  width: calc((100% - 24px) / 2);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
 /* --------------FOOTER-------------- */
 .footer {
   background-color: #2e2f42;
