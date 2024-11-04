@@ -252,7 +252,7 @@ img {
 }
 @media screen and (min-width: 1158px) {
   .team-container {
-    max-width: 1158;
+    max-width: 1158px;
   }
   .team {
     padding: 120px 0;
