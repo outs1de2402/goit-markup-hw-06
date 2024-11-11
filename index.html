@@ -48,25 +48,31 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-svg" width="24" height="24">
             <use href="./images/icons.svg#icon-burgerbtn"></use>
           </svg>
         </button>
       </div>
       <!-- mb -->
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close">
+          <button class="mobile-menu-close" data-menu-close>
             <svg class="modal-dagger" width="8" height="8">
               <use href="./images/icons.svg#icon-dagger"></use>
             </svg>
           </button>
           <nav class="mobile-menu-nav">
             <ul class="mb-list">
-              <li class="mb-list-item"><a class="link-mb">Studio</a></li>
-              <li class="mb-list-item"><a class="link-mb">Portfolio</a></li>
-              <li class="mb-list-item"><a class="link-mb">Contacts</a></li>
+              <li class="mb-list-item">
+                <a class="link-mb" href="">Studio</a>
+              </li>
+              <li class="mb-list-item">
+                <a class="link-mb" href="">Portfolio</a>
+              </li>
+              <li class="mb-list-item">
+                <a class="link-mb" href="">Contacts</a>
+              </li>
             </ul>
           </nav>
           <address class="adress-mb">
@@ -121,7 +127,7 @@
     <!-- --------------------SECTION1_SOLUTION----------------------- -->
     <main class="main">
       <section class="solution">
-        <div class="container">
+        <div class="container" data-modal>
           <h1 class="solution-title">Effective Solutions for Your Business</h1>
           <button type="button" class="solution-btn" data-modal-open>
             Order Service
@@ -693,7 +699,7 @@
     <!-- ----------------/FOTER--------------- -->
     <div class="backdrop">
       <div class="modal">
-        <button type="button" class="btn-modal">
+        <button type="button" class="btn-modal" data-modal-close>
           <svg class="modal-dagger" width="8" height="8">
             <use href="./images/icons.svg#icon-dagger"></use>
           </svg>
@@ -778,5 +784,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
